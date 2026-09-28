@@ -1,81 +1,25 @@
 ---
 layout: page
-title: project 8
-description: an other project with a background image and giscus comments
-img: assets/img/9.jpg
+title: Unfitted Finite Elements for time-harmonic Maxwell
+description: In this project we considered the low-frequency Curl-Curl problem with an unfitted finite element discretization
+img: assets/img/projects/cutfem_nonmatching.png
 importance: 2
 category: work
 giscus_comments: true
 ---
+For problems with a complicated or time-dependent domain, meshing can become one of the bottleneck. An alternative to this problem is the application of CutFem methods. 
+Instead of fitting the mesh to the geometry, the interface is allowed to cut through the mesh cells. In such a case small cut cells can become a problem and different stabilization routines can be applied. 
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
-
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
+<div style="max-width: 520px; margin: 0 auto;">
+  {% include figure.liquid path="assets/img/projects/cutfem_nonmatching.png" alt="Curved geometry drawn over a fixed triangular background mesh; the elements inside or cut by the boundary are highlighted" zoomable=true caption="Non-matching mesh: the geometry cuts through the elements of a fixed background mesh." %}
 </div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+In this projection we considered, the low-frequency time-harmonic Maxwells equations. Our goal was not only to stabilize with respect to the small cut cells, but also to arbitrary high jumps, in the material parameter. Moreover, by choosing a mixed system, we could also stabilize with respect to the so-called Eddy-Current case, where the mass part of the equations goes to zero.
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+A second part of the project was about the effective preconditioning of this saddle-point system in presence of the ghost-penalty. 
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+(Preprint soon)
 
-{% raw %}
+Joint work with
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
-
-{% endraw %}
+- **Christoph Lehrenfeld**, Institute for Numerical and Applied Mathematics, University of Göttingen

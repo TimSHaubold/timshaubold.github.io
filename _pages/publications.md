@@ -13,8 +13,18 @@ nav_order: 2
 
 {% include bib_search.liquid %}
 
+<h2>Articles, preprints and proceedings</h2>
+
 <div class="publications">
 
-{% bibliography %}
+{% bibliography --query !@phdthesis %}
+
+</div>
+
+<h2>PhD thesis</h2>
+
+<div class="publications">
+
+{% bibliography --query @phdthesis --group_by none %}
 
 </div>
