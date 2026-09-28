@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://timshaubold.github.io/al-folio/sitemap.xml
