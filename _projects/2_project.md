@@ -9,7 +9,7 @@ giscus_comments: true
 related_publications: true
 ---
 
-For high order basis function in finite element methods, we choose so-called modal basis functions based on orthogonal polynomials. 
+For high order basis function in finite element methods, we choose so-called modal basis functions based on orthogonal polynomials.
 E.g. in time-dependent problems a projection of right-hand-sides onto the finite element space one needs to solve the following interpolation problem:
 Find $$u_{hp} \in \mathbb{V}_{hp}$$ such that
 
@@ -21,11 +21,11 @@ u_{hp}(\lambda) &= u(\lambda) && \forall \text{ vertices } \lambda,\\
 \end{aligned}
 $$
 
-In this project, we considered the choice of test function. We searched for polynomials in closed form, which would reduce the interior block to a diagonal or even the identity. 
+In this project, we considered the choice of test function. We searched for polynomials in closed form, which would reduce the interior block to a diagonal or even the identity.
 
-For the $$H^1$$ problem, one just need to rewrite the integrated Jacobi-Polynomial as a weighted Jacobi polynomial. In this case, one can directly test with the right Jacobi polynomial. 
+For the $$H^1$$ problem, one just need to rewrite the integrated Jacobi-Polynomial as a weighted Jacobi polynomial. In this case, one can directly test with the right Jacobi polynomial.
 
-For the cases of vectorial basis function for $$H(\operatorname{curl})$$ {% cite doi:10.1137/23M1606794 %} and $$H(\operatorname{div})$$ {% cite haubold2026highorderbiorthogonalfunctions %}, we needed to find not only the polynomial orthogonality, but also the vectorial orthogonality. 
+For the cases of vectorial basis function for $$H(\operatorname{curl})$$ {% cite doi:10.1137/23M1606794 %} and $$H(\operatorname{div})$$ {% cite haubold2026highorderbiorthogonalfunctions %}, we needed to find not only the polynomial orthogonality, but also the vectorial orthogonality.
 
 <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem;">
   <div style="flex: 1 1 240px; max-width: 360px;">

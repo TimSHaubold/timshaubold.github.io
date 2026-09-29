@@ -23,4 +23,3 @@ Joint work with
 - **Tim van Beeck**, University of Göttingen
 - **Umberto Zerbinati**, University of Oxford
 - **Maximilian Zienecker**, University of Göttingen
-
