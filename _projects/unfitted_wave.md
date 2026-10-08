@@ -27,8 +27,12 @@ As in the Maxwell project, the mesh is not fitted to the interface: $$\Gamma$$ c
 In space, we discretize with discontinuous finite elements on the cut mesh. Small cut cells are handled by a ghost penalty based on polynomial extension: every ill-cut cell is paired with a well-cut or uncut neighbouring cell, from which the polynomial is extended.
 In time, we use explicit Runge–Kutta schemes and analyse their $$L^2$$-stability in presence of the ghost penalty.
 
+As a test case, we consider a Cassini oval cut out of an unstructured background mesh, with reflecting walls and a Gaussian pressure pulse as initial data.
+
+{% include figure.liquid path="assets/img/projects/cassini_cut_mesh.png" alt="Cassini oval on a triangular background mesh: active uncut elements in blue, cut elements in orange, inactive elements in grey, with a zoom on the narrow neck" zoomable=true caption="Cut mesh of the Cassini oval test case on $[-2,1] \times [-0.6,0.6]$ with $h = 0.02$." %}
+
 <div style="max-width: 720px; margin: 0 auto;">
-  {% include figure.liquid path="assets/video/unfitted_wave_simulation.gif" avoid_scaling=true alt="Animation of a pressure pulse spreading as waves across a rectangular domain" caption="A test case computed with our unfitted discontinuous Galerkin code for the acoustic wave equation." %}
+  {% include figure.liquid path="assets/video/unfitted_wave_simulation.gif" avoid_scaling=true alt="Animation of a pressure pulse spreading as waves across the domain" caption="The Cassini oval test case computed with our unfitted discontinuous Galerkin code." %}
 </div>
 
 (Preprint soon)

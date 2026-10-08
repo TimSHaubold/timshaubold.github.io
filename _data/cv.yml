@@ -172,6 +172,20 @@ cv:
       - label: "Nov 2018"
         details: "JKU Linz, Linz, Austria: working with Veronika Pillwein"
 
+    Skills:
+      - name: Finite element software
+        keywords: [NGSolve, ngsxfem]
+      - name: Programming
+        keywords: [Python, MATLAB, C++ (basic)]
+      - name: Computer algebra
+        keywords: [Mathematica]
+
+    Languages:
+      - name: German
+        summary: native speaker
+      - name: English
+        summary: fluent
+
     Additional information:
       - bullet: "2026 · Co-chair of Section 18 at the GAMM Annual Meeting"
       - bullet: "2024 · [FE Stokes Re-Pair](https://fe-nerd-games.github.io/FEStokesRePair/), a nerdy card game (with C. Lehrenfeld, T. van Beeck, U. Zerbinati, M. Zienecker)"
