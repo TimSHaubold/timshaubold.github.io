@@ -27,6 +27,10 @@ As in the Maxwell project, the mesh is not fitted to the interface: $$\Gamma$$ c
 In space, we discretize with discontinuous finite elements on the cut mesh. Small cut cells are handled by a ghost penalty based on polynomial extension: every ill-cut cell is paired with a well-cut or uncut neighbouring cell, from which the polynomial is extended.
 In time, we use explicit Runge–Kutta schemes and analyse their $$L^2$$-stability in presence of the ghost penalty.
 
+<div style="max-width: 720px; margin: 0 auto;">
+  {% include figure.liquid path="assets/video/unfitted_wave_simulation.gif" avoid_scaling=true alt="Animation of a pressure pulse spreading as waves across a rectangular domain" caption="A test case computed with our unfitted discontinuous Galerkin code for the acoustic wave equation." %}
+</div>
+
 (Preprint soon)
 
 Joint work with
